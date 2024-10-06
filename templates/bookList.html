@@ -27,7 +27,7 @@
               <label for="price">Price : </label>
               {{ book.price }}
             </p>
-              <a href="" class="btn btn-primary">Edit</a>
+              <a href="{% url 'bookUpdate' book.pk %}" class="btn btn-primary">Edit</a>
               <a href="{% url 'bookDelete' book.pk %}" class="btn btn-danger">Delete</a>
           </div>
         </div>
